@@ -9,7 +9,10 @@ class Song {
     return "title is: " + this.title + " by " + this.artist;
   }
 }
+let song = new Song("jeremy zucker", "heavy");
+console.log(song.getTitle());
 
+export {Song};
 //Exercise:
 
 //Add a method to the Song class that returns the string "title is {title} by {artist}.

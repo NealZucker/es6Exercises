@@ -1,8 +1,9 @@
+import {Song} from './talkingHead';
 class LedZepSong extends Song {
 
   //edits go into the args of the constructor and super methods below
-  constructor(){
-    super();
+  constructor(artist, title){
+    super(artist, title);
   }
 }
 
@@ -11,7 +12,7 @@ class LedZepSong extends Song {
 //Editing only the constructor arguments and super arguments, make the
 //code below console.log "title is: black dog by Led Zep"
 
-let blackDog = new LedZepSong("black dog");
+let blackDog = new LedZepSong("led zeppelin", "black dog");
 console.log(blackDog.getTitle());
 
 //Exercise:
