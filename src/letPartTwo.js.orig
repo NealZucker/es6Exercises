@@ -1,0 +1,22 @@
+//Exercise:
+//currently, this loop logs the integer "6" 5 times. Why is it doing that? 
+//We can use the wicked cool "let" keyword to resolve this to the expected output of
+// 1
+// 2
+// 3
+// 4
+// 5
+
+//Do it!
+
+<<<<<<< HEAD
+for (let i = 1; i <= 5; i++) {
+=======
+for (var i = 1; i <= 5; i++) {
+>>>>>>> 730ebd31d5ae39532f34eec2de455d4b86bbcb71
+  setTimeout(function(){
+    console.log(i);
+  }, 500);
+}
+
+//lastly, declare a const and try to change it. Checkout the error message.

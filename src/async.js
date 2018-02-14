@@ -9,12 +9,12 @@
 
 function asyncSim(callback) {
   setTimeout(() => {
-    callback('this is all the data, do whatever you want to it');
+    callback("data", "barfing");
   }, 2000);
 };
 
 //code goes into the function call below
-asyncSim();
+asyncSim((data, data2) => console.log((data + data2).split("")));
 
 //Part 2: In the callback execution, pass another string as an arg and log that one as well.
 

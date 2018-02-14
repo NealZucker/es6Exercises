@@ -1,12 +1,10 @@
 //That might have been a little strange, but you've actually done it a
 //bajillion times. This might be a little more familiar to you:
+let data = {   
+  dweebyCat: "Moby"
+};
+var barf = callback => callback(data);
 
-function barf(callback){
-  let catData = {
-    dweebyCat: "Mody"
-  };
-  callback(data);
-}
 
 barf(function(data){
   console.log(data.dweebyCat);
